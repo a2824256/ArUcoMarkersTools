@@ -15,7 +15,7 @@ objp[:,:2] = np.mgrid[0:w,0:h].T.reshape(-1,2)
 objp = objp*18
 objpoints = []
 imgpoints = []
-images = glob.glob('your_capture.jpg')
+images = glob.glob('chessboard.jpg')
 i = 1
 for fname in images:
     img = cv2.imread(fname)
